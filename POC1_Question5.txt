@@ -1,0 +1,19 @@
+/*Question 5
+Find the Output and Write  Explanation
+*/
+class Main
+{
+	public static void main(String[] args) 
+	{
+		int t;
+		System.out.println("Value of variable t:"+t);
+	}
+}
+
+/*Output =>
+Variable t might not have been initialized
+            System.out.println("Value of variable t:"+t);
+                                                          
+Explanation =>
+	In Main method the variable t is declared but not intialized.Variable t must be
+	intialized, if it is not then it will throw compile time error 

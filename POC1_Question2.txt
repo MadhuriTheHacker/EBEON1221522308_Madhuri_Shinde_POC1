@@ -1,0 +1,62 @@
+/* Question 2
+Write a program to create ‘Square’ and ‘Rectangle’ class. 
+i. Implement methods to calculate area and perimeter of square and rectangles.  These two methods are going to take side as argument in square and length and  breadth in case of rectangle. 
+ii. Create a ‘MainClass’ in which define main method ,in which create two object for  each Square and Rectangle class, Now calculate then show area and perimeter in  the console after providing appropriate values for side , length & breadth using  methods of these classes. 
+*/
+class Square
+{
+	double areaofsquare;
+	double perimeterofsquare;
+	void area(double side)
+	{
+		areaofsquare=side*side;
+	}
+	void perimeter(double side)
+	{
+		 perimeterofsquare=4*side;
+	}
+	void displayofsquare()
+	{
+		System.out.println("Area Of Sqaure :"+areaofsquare+" "+"\n"+"Perimeter Of Square :"+perimeterofsquare);
+	}
+}
+class Rectangle
+{	double areaofrectangle;
+	double perimeterofrectangle;
+	void area(double length,double breadth)
+	{
+		areaofrectangle=length*breadth;
+	
+	}
+	void perimeter(double length,double breadth)
+	{
+		perimeterofrectangle=2*(length*breadth);
+	}
+	void displayofrectangle()
+	{
+		System.out.println("Area Of Rectangle :"+areaofrectangle+" "+"\n"+"Perimeter Of Rectangle :"+perimeterofrectangle);
+	}
+}
+class MainClass 
+{
+	public static void main(String[] args) 
+	{
+	Square square1=new Square();
+	Rectangle rectangle1=new Rectangle();
+	
+	square1.area(7.2);
+	square1.perimeter(4.5);
+	square1.displayofsquare();
+	
+	rectangle1.area(2.4,3.5);
+	rectangle1.perimeter(3.3,4.5);
+	rectangle1.displayofrectangle();
+
+	}
+}
+/*Output =>
+Area Of Sqaure :51.84
+Perimeter Of Square :18.0
+Area Of Rectangle :8.4
+Perimeter Of Rectangle :29.7
+*/
